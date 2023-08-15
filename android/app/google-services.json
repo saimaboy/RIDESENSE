@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "323582705102",
+    "project_id": "bike-app-iot",
+    "storage_bucket": "bike-app-iot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323582705102:android:025e8b0790268276db3f9f",
+        "android_client_info": {
+          "package_name": "com.example.login_signup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323582705102-9qs5k1bi4i49qe3bhektelo8c4nu0om3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBvJSe5D26tB5LpEh-7koRCe-_x-YL4_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323582705102-9qs5k1bi4i49qe3bhektelo8c4nu0om3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
