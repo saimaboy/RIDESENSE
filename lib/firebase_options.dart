@@ -17,15 +17,24 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,40 +52,11 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDdhZVWgiwhchiuukS9o462B-JiAyJtj3I',
-    appId: '1:323582705102:web:e4f1086d8ee97cd8db3f9f',
-    messagingSenderId: '323582705102',
-    projectId: 'bike-app-iot',
-    authDomain: 'bike-app-iot.firebaseapp.com',
-    storageBucket: 'bike-app-iot.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBBvJSe5D26tB5LpEh-7koRCe-_x-YL4_M',
     appId: '1:323582705102:android:025e8b0790268276db3f9f',
     messagingSenderId: '323582705102',
     projectId: 'bike-app-iot',
     storageBucket: 'bike-app-iot.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC92GVBqSDBFVi1W_uGuIBLfvnkj51gPXc',
-    appId: '1:323582705102:ios:2fe64fdc4c9d8af0db3f9f',
-    messagingSenderId: '323582705102',
-    projectId: 'bike-app-iot',
-    storageBucket: 'bike-app-iot.appspot.com',
-    iosClientId: '323582705102-pvfd4jur8lfqfl8a6ebqeuheks65v0vs.apps.googleusercontent.com',
-    iosBundleId: 'com.example.loginSignup',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyC92GVBqSDBFVi1W_uGuIBLfvnkj51gPXc',
-    appId: '1:323582705102:ios:a2829d4399ebc0f5db3f9f',
-    messagingSenderId: '323582705102',
-    projectId: 'bike-app-iot',
-    storageBucket: 'bike-app-iot.appspot.com',
-    iosClientId: '323582705102-grlmsvdfpnde1mbqset39tjd58qskf9h.apps.googleusercontent.com',
-    iosBundleId: 'com.example.loginSignup.RunnerTests',
   );
 }

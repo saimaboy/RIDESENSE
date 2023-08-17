@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:login_signup/View/widgets/signupbutton.global.dart';
-import 'package:login_signup/View/widgets/social.signup.dart';
 import 'package:login_signup/View/widgets/text.form.global.dart';
 import 'package:login_signup/utils/global.colors.dart';
 import 'package:login_signup/View/login.view.dart';
@@ -71,7 +70,7 @@ class SignupView extends StatelessWidget {
                 const SizedBox(height: 10),
                 const ButtonGlobal(),
                 const SizedBox(height: 25),
-                const SocialSignup(),
+                // const SocialSignup(),
                 const SizedBox(height: 150),
                 Align(
                   alignment: Alignment.bottomCenter,
